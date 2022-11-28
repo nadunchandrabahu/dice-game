@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.player-label {
+  z-index: 5;
+  font-weight: 400;
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  color: #2f2f2f;
+  position: relative;
+  top: 54px;
+}
+
+.player1 {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  width: 32.5%;
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0.65);
+  transition: 0.15s;
+  /* box-shadow: ; */
+}
+
+.player2 {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  width: 32.5%;
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.5s;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.new-game {
+  top: 17.5%;
+}
+
+.roll-dice {
+  top: 66%;
+}
+
+.hold {
+  top: 76%;
+}
+
+.total-score {
+  display: flex;
+  justify-content: center;
+  font-size: 84px;
+  color: rgb(188, 30, 30);
+  margin-top: 64px;
+}
+
+.current-score-box {
+  background-color: #c7365f;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 20%;
+  border-radius: 7.5px;
+}
+
+.label-current,
+.current-score {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.current-score {
+  font-size: 36px;
+  margin-top: -10px;
+}
+
+.dice {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6%;
+  z-index: 10;
+}
+
+.dice1 {
+  display: none;
+}
+
+.dice2 {
+  display: none;
+}
+
+.dice3 {
+  display: none;
+}
+
+.dice4 {
+  display: none;
+}
+
+.dice5 {
+  display: none;
+}
+
+.dice6 {
+  display: none;
+}
