@@ -23,10 +23,6 @@ const p2Label = document.querySelector(".p2-label");
 
 const dice = document.querySelectorAll(".dice");
 
-document.querySelector(".roll-dice").addEventListener("click", rollDice);
-document.querySelector(".new-game").addEventListener("click", newGame);
-document.querySelector(".hold").addEventListener("click", hold);
-
 function hold() {
   if (winFlag) return;
   if (newDice != 0 || newDice != 1) {
@@ -124,9 +120,8 @@ function addScore(score) {
 }
 
 function checkWin() {
-  //
   if (p1Total >= 100) {
-    // alert(`Player 1 has won ${p1Total}-${p2Total}!`);
+    // player 1 has won
     player1_Card.style.backgroundColor = "#2f2f2f";
     p1Label.style.color = "rgb(0,255,0)";
     p1Label.textContent = "PLAYER 1 WON!";
@@ -136,7 +131,7 @@ function checkWin() {
   }
 
   if (p2Total >= 100) {
-    // alert(`Player 2 has won ${p2Total}-${p1Total}!`);
+    // player 2 has won
     player2_Card.style.backgroundColor = "#2f2f2f";
     p2Label.style.color = "rgb(0,255,0)";
     p2Label.textContent = "PLAYER 2 WON!";
@@ -144,5 +139,8 @@ function checkWin() {
     winFlag = true;
     return;
   }
-  winFlag = false;
 }
+
+document.querySelector(".roll-dice").addEventListener("click", rollDice);
+document.querySelector(".new-game").addEventListener("click", newGame);
+document.querySelector(".hold").addEventListener("click", hold);
