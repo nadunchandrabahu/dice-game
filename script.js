@@ -90,8 +90,6 @@ function newGame() {
 function rollDice() {
   if (winFlag) return;
   newDice = Math.round(Math.random() * 5 + 1);
-  console.log(newDice);
-
   for (let i = 0; i < dice.length; i++) {
     if (i === newDice - 1) {
       dice[i].classList.remove(`dice${i + 1}`);
