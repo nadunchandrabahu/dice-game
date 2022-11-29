@@ -89,7 +89,9 @@ function newGame() {
 
 function rollDice() {
   if (winFlag) return;
-  newDice = Math.round(Math.random() * 5 + 1);
+  //increased chance to roll 1. You actually roll a number between 1-10, (2,3,4,5,6) are good. (1,7,8,9,10) are bad.
+  newDice = Math.round(Math.random() * 9 + 1);
+  if (newDice > 6) newDice = 1;
   for (let i = 0; i < dice.length; i++) {
     if (i === newDice - 1) {
       dice[i].classList.remove(`dice${i + 1}`);
