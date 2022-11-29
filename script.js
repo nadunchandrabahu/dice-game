@@ -122,16 +122,34 @@ function addScore(score) {
 function checkWin() {
   if (p1Total >= 100) {
     // player 1 has won
+
+    //checking if cheated.
+    let p1TotalNow = Number(p1_TotalLabel.textContent);
+
+    if (p1TotalNow < 100) {
+      alert("Cheating from player 1 detected. Restarting game...");
+      newGame();
+    }
+
     player1_Card.style.backgroundColor = "#2f2f2f";
     p1Label.style.color = "rgb(0,255,0)";
     p1Label.textContent = "PLAYER 1 WON!";
     p1_TotalLabel.style.color = "rgb(0,255,0)";
     winFlag = true;
+
     return;
   }
 
   if (p2Total >= 100) {
     // player 2 has won
+
+    //checking if cheated.
+    let p2TotalNow = Number(p2_TotalLabel.textContent);
+    if (p2TotalNow < 100) {
+      alert("Cheating from player 2 detected. Restarting game...");
+      newGame();
+    }
+
     player2_Card.style.backgroundColor = "#2f2f2f";
     p2Label.style.color = "rgb(0,255,0)";
     p2Label.textContent = "PLAYER 2 WON!";
