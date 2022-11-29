@@ -120,13 +120,13 @@ function addScore(score) {
 }
 
 function checkWin() {
-  if (p1Total >= 100) {
+  if (p1Total >= 36) {
     // player 1 has won
 
     //checking if cheated.
     let p1TotalNow = Number(p1_TotalLabel.textContent);
 
-    if (p1TotalNow < 100) {
+    if (p1TotalNow < 36) {
       alert("Cheating from player 1 detected. Restarting game...");
       newGame();
       return;
@@ -141,12 +141,12 @@ function checkWin() {
     return;
   }
 
-  if (p2Total >= 100) {
+  if (p2Total >= 36) {
     // player 2 has won
 
     //checking if cheated.
     let p2TotalNow = Number(p2_TotalLabel.textContent);
-    if (p2TotalNow < 100) {
+    if (p2TotalNow < 36) {
       alert("Cheating from player 2 detected. Restarting game...");
       newGame();
       return;
