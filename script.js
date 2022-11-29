@@ -129,6 +129,7 @@ function checkWin() {
     if (p1TotalNow < 100) {
       alert("Cheating from player 1 detected. Restarting game...");
       newGame();
+      return;
     }
 
     player1_Card.style.backgroundColor = "#2f2f2f";
@@ -148,6 +149,7 @@ function checkWin() {
     if (p2TotalNow < 100) {
       alert("Cheating from player 2 detected. Restarting game...");
       newGame();
+      return;
     }
 
     player2_Card.style.backgroundColor = "#2f2f2f";
