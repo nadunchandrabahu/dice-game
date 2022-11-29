@@ -23,7 +23,7 @@ body {
   justify-content: center;
   color: #2f2f2f;
   position: relative;
-  top: 54px;
+  top: 66px;
 }
 
 .player1 {
@@ -161,6 +161,28 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
-/* .btn:focus {
+.btn:focus {
   outline: none;
-} */
+}
+
+@media (max-width: 590px) {
+  .player1,
+  .player2 {
+    width: 45%;
+  }
+  .player-label {
+    font-size: 30px;
+    top: 84px;
+    margin-bottom: 120px;
+  }
+  .current-score-box {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1040px) {
+  .player1,
+  .player2 {
+    width: 32.5%;
+  }
+}
