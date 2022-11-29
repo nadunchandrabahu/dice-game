@@ -65,8 +65,10 @@ body {
   font-size: 18px;
   font-family: "Nunito", sans-serif;
   background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
   cursor: pointer;
   z-index: 10;
+  transition: 0.2s;
 }
 
 .new-game {
@@ -87,6 +89,7 @@ body {
   font-size: 84px;
   color: rgb(188, 30, 30);
   margin-top: 64px;
+  transition: 0.5s;
 }
 
 .current-score-box {
@@ -106,6 +109,7 @@ body {
   justify-content: center;
   color: white;
   font-family: "Nunito", sans-serif;
+  transition: 0.5s;
 }
 
 .current-score {
@@ -124,24 +128,39 @@ body {
 
 .dice1 {
   display: none;
+  transition: 0.5s;
 }
 
 .dice2 {
   display: none;
+  transition: 0.5s;
 }
 
 .dice3 {
   display: none;
+  transition: 0.5s;
 }
 
 .dice4 {
   display: none;
+  transition: 0.5s;
 }
 
 .dice5 {
   display: none;
+  transition: 0.5s;
 }
 
 .dice6 {
   display: none;
+  transition: 0.5s;
 }
+
+.btn:active {
+  transform: translate(-50%, -45%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* .btn:focus {
+  outline: none;
+} */
