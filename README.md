@@ -17,4 +17,4 @@
  
  Player 1 always starts first.
  
-Not yet optimized for Tab/Mobile screens.
+Optimized for mobile screen.
