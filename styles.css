@@ -189,9 +189,33 @@ body {
   }
 }
 
-@media (min-width: 1040px) {
-  .player1,
-  .player2 {
-    width: 32.5%;
+@media (max-height: 500px) {
+  .dice {
+    width: 8%;
+  }
+
+  .player-label {
+    font-size: 24px;
+    top: 44px;
+    margin-bottom: 120px;
+  }
+  .total-score {
+    margin-top: -72px;
+    font-size: 48px;
+  }
+  .hold {
+    top: 80%;
+  }
+  .roll-dice {
+    top: 56%;
+  }
+  .current-score-box {
+    height: 30%;
+  }
+  .current-right {
+    margin-left: 12px;
+  }
+  .current-left {
+    margin-left: -12px;
   }
 }
