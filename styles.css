@@ -178,6 +178,15 @@ body {
   .current-score-box {
     width: 60%;
   }
+  .dice {
+    width: 15%;
+  }
+  .hold {
+    top: 86%;
+  }
+  .roll-dice {
+    top: 56%;
+  }
 }
 
 @media (min-width: 1040px) {

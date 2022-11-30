@@ -134,7 +134,7 @@ function checkWin() {
 
     player1_Card.style.backgroundColor = "#2f2f2f";
     p1Label.style.color = "rgb(0,255,0)";
-    p1Label.textContent = "PLAYER 1 WON!";
+    p1Label.textContent = "WINNER!";
     p1_TotalLabel.style.color = "rgb(0,255,0)";
     winFlag = true;
 
@@ -154,7 +154,7 @@ function checkWin() {
 
     player2_Card.style.backgroundColor = "#2f2f2f";
     p2Label.style.color = "rgb(0,255,0)";
-    p2Label.textContent = "PLAYER 2 WON!";
+    p2Label.textContent = "WINNER!";
     p2_TotalLabel.style.color = "rgb(0,255,0)";
     winFlag = true;
     return;
